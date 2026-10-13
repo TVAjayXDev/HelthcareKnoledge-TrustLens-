@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>TrustLens — Clinical AI Intelligence</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#efeeea","tertiary-fixed-dim":"#d0bcff","surface-container-lowest":"#ffffff","background":"#faf9f5","on-tertiary-container":"#9466ff","on-primary-container":"#858383","on-secondary-container":"#61615c","outline-variant":"#c4c7c7","primary-fixed":"#e5e2e1","tertiary-container":"#23005c","on-secondary-fixed":"#1b1c18","error-container":"#ffdad6","on-surface":"#1b1c1a","inverse-surface":"#30312e","secondary":"#5e5f5a","surface-container-high":"#e9e8e4","secondary-fixed":"#e4e2dc","surface-container-low":"#f5f4f0","on-secondary":"#ffffff","surface":"#faf9f5","surface-dim":"#dbdad6","on-tertiary":"#ffffff","on-background":"#1b1c1a","surface-tint":"#5f5e5e","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5516be","surface-container-highest":"#e3e2df","on-error":"#ffffff","tertiary-fixed":"#e9ddff","primary-fixed-dim":"#c8c6c5","secondary-container":"#deddd7","inverse-primary":"#c8c6c5","primary-container":"#1c1b1b","surface-bright":"#faf9f5","error":"#ba1a1a","on-tertiary-fixed":"#23005c","on-surface-variant":"#444748","outline":"#747878","on-primary-fixed-variant":"#474646","inverse-on-surface":"#f2f1ed","on-secondary-fixed-variant":"#474743","primary":"#000000","surface-variant":"#e3e2df","secondary-fixed-dim":"#c8c7c0","on-primary":"#ffffff","on-primary-fixed":"#1c1b1b","tertiary":"#000000"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"display":["Inter"]},"fontSize":{"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"display-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"display":["72px",{"lineHeight":"76px","letterSpacing":"-0.035em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen selection:bg-surface-container-highest selection:text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="TrustLens Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcm2kHrKx85it8dy_KSuWbpPW6vc7PBBacU2nuRdKLFnC43io_jBfEa6fkAn_vY5zfhqJuJfp6lxA0RQJgdCCX6lm26k0SYAoHtKSc1c5IKyhmaQcLySQZraFLwtybkMVYy1fj7rHB2B9TIX8_thkVOQqvgW6SQQxiV5vYDVG5QMtBf2A-zBfiUhTx0BYO8uNMVxWRE4aXGugiO4f2doKnACiPAxOhAxKY4Eo3A95avJhfJs3dqK2V"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">TrustLens</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Healthcare AI</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full" data-active-classes="text-on-surface font-semibold bg-surface-container-low"><a aria-current="page" class="px-space-md py-space-sm rounded-full transition-colors text-on-surface font-semibold bg-surface-container-low" data-path="how-trust-works" href="#">How Trust Works</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="live-demo" href="#">Live Demo</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="knowledge-gaps" href="#">Knowledge Gaps</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="team" href="#">Team</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 py-1 px-3 rounded-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><span class="w-1.5 h-1.5 rounded-full bg-[#2F7D5B] animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide">Hospital Portal • St. Jude Health</span></div><a class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-neutral-800 transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-sm" data-path="live-demo" href="#">Try the Demo</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle ambient glow background decoration -->
+<div class="relative w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin pb-16">
+<div class="absolute -top-10 right-1/4 w-96 h-96 rounded-full bg-gradient-to-tr from-tertiary-fixed-dim/20 via-primary/5 to-surface-container blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 left-10 w-80 h-80 rounded-full bg-surface-container-high/60 blur-2xl pointer-events-none -z-10"></div>
+<!-- Main Grid: Left Slim Nav Sidebar (240px) + Dynamic Workspace (Rest) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start pt-6">
+<!-- LEFT SLIM WORKSPACE SIDEBAR (2.5 Cols on XL) -->
+<aside class="xl:col-span-3 flex flex-col gap-6">
+<!-- Navigation Panel -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-4 shadow-sm flex flex-col justify-between gap-8">
+<div class="flex flex-col gap-1.5">
+<div class="px-3 py-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Clinical Workspace</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">v2.4</span>
+</div>
+<!-- Nav Item 1: Active -->
+<button class="w-full flex items-center justify-between px-3.5 py-3 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold text-left transition-all">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>Ask &amp; Discover</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</button>
+<!-- Nav Item 2 -->
+<button class="w-full flex items-center gap-3 px-3.5 py-3 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md text-left transition-colors">
+<span class="material-symbols-outlined text-[20px]">folder_open</span>
+<span>Documents &amp; Repo</span>
+</button>
+<!-- Nav Item 3 -->
+<button class="w-full flex items-center gap-3 px-3.5 py-3 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md text-left transition-colors">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+<span>Upload &amp; Index</span>
+</button>
+<!-- Nav Item 4 -->
+<button class="w-full flex items-center justify-between px-3.5 py-3 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md text-left transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">error_outline</span>
+<span>Knowledge Gaps</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">2</span>
+</button>
+<!-- Nav Item 5 -->
+<button class="w-full flex items-center gap-3 px-3.5 py-3 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md text-left transition-colors">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span>How Trust Works</span>
+</button>
+</div>
+<!-- Bottom Session Card -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-semibold shrink-0">
+                EV
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Dr. Elena Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Emergency Medicine</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                St. Jude Metro Campus
+              </span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">lock</span>
+</div>
+</div>
+</div>
+<!-- Quick Telemetry Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Corpus Governance</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">99.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validated SOPs</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 94%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Audit cycle: Daily</span>
+<span class="font-semibold text-on-surface">3,412 SOPs</span>
+</div>
+</div>
+</aside>
+<!-- MAIN SPLIT WORKSPACE (9.5 Cols on XL: 62% Primary + 38% Inspector) -->
+<section class="xl:col-span-9 flex flex-col gap-6 min-w-0">
+<!-- 1. TOP SEARCH & PROMPT BAR -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-sm flex flex-col gap-4">
+<div class="flex flex-col md:flex-row items-stretch md:items-center gap-3">
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined text-on-surface-variant absolute left-4 text-[22px] pointer-events-none">search</span>
+<input aria-label="Clinical inquiry prompt" class="w-full pl-12 pr-12 py-3.5 bg-surface-container-low text-on-surface rounded-full font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none transition-all shadow-inner" id="query-input" type="text" value="Can nursing staff initiate IV potassium without attending physician co-signature?"/>
+<button class="absolute right-3 w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="Clear or speech input">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<button class="px-6 py-3.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-neutral-800 transition-all flex items-center justify-center gap-2 shadow-sm shrink-0">
+<span>Synthesize Query</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Suggested Prompt Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-1">Trending:</span>
+<button class="chip-example px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">history</span>
+              Prior auth requirements for outpatient cardiac MRI
+            </button>
+<button class="chip-example px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              Sepsis protocol bundle update 2024
+            </button>
+<button class="chip-example px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">medication</span>
+              Can RNs titrate propofol in Step-Down unit?
+            </button>
+</div>
+</div>
+<!-- SPLIT ROW: Central Synthesis (approx 62%) & Trust Inspector (approx 38%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT WORKSPACE COLUMN: 62% (~7.5 Cols) -->
+<div class="lg:col-span-7 xl:col-span-7 flex flex-col gap-6">
+<!-- 2. CENTRAL ANSWER CARD -->
+<article class="bg-surface-container-lowest rounded-DEFAULT p-6 lg:p-8 shadow-sm flex flex-col gap-6 relative overflow-hidden">
+<!-- Radial atmospheric light under synthesis header -->
+<div class="absolute top-0 right-0 w-72 h-72 rounded-full bg-gradient-to-br from-tertiary-fixed-dim/20 to-primary/5 blur-3xl pointer-events-none"></div>
+<!-- Header Row of Answer Card -->
+<div class="flex flex-col gap-4 relative z-10">
+<div class="flex flex-wrap items-center justify-between gap-3">
+<!-- Grounding Status Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>All claims grounded in retrieved documents</span>
+</div>
+<!-- Confidence Metric -->
+<div class="relative group">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#2F7D5B] animate-pulse"></span>
+<span>High Confidence (98%)</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Triple-corroborated by active Emergency Standing Protocol and Pharmacy Formulary.
+                </p>
+<!-- Action Toolbar Pill Buttons -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Evidence Summary (PDF)</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+<span>Compare Sources</span>
+</button>
+<button class="px-3 py-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors ml-auto flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>Report Issue</span>
+</button>
+</div>
+</div>
+<!-- Interactive Synthesized Answer Paragraph (Claim-to-source selectable sentences) -->
+<div class="flex flex-col gap-4 pt-4 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Clinical Synthesis • Direct Grounding</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click any claim to inspect citation</span>
+</div>
+<div class="p-6 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-lg text-body-lg leading-relaxed flex flex-col gap-4">
+<!-- Sentence 1 (Active default) -->
+<div class="claim-sentence p-3.5 rounded-DEFAULT bg-surface-container-lowest shadow-sm transition-all cursor-pointer relative" data-claim="1" id="claim-sentence-1" role="button" tabindex="0">
+<span class="inline-block">
+                      Under Emergency Department Standing Protocol 4.2, registered nurses are authorized to initiate potassium chloride IV replacement (rates ≤20 mEq/hr) without prior physician co-signature for adult patients presenting with confirmed serum K⁺ &lt; 3.2 mEq/L
+                    </span>
+<span class="inline-flex items-center justify-center ml-1.5 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold align-middle shadow-sm">
+                      [1]
+                    </span>
+<span class="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-8 rounded-full bg-primary"></span>
+</div>
+<!-- Sentence 2 -->
+<div class="claim-sentence p-3.5 rounded-DEFAULT hover:bg-surface-container-lowest transition-all cursor-pointer text-on-surface" data-claim="2" id="claim-sentence-2" role="button" tabindex="0">
+<span class="inline-block">
+                      However, pre-infusion renal clearance must be validated with a serum creatinine &lt;1.8 mg/dL obtained within the preceding 4-hour window
+                    </span>
+<span class="inline-flex items-center justify-center ml-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold align-middle">
+                      [2]
+                    </span>
+</div>
+<!-- Sentence 3 -->
+<div class="claim-sentence p-3.5 rounded-DEFAULT hover:bg-surface-container-lowest transition-all cursor-pointer text-on-surface" data-claim="3" id="claim-sentence-3" role="button" tabindex="0">
+<span class="inline-block">
+                      If transferring out of the ED to general floor care, or in cases involving pediatric cohorts (&lt;18 years), direct attending physician countersignature is strictly mandatory prior to infusion bag hang
+                    </span>
+<span class="inline-flex items-center justify-center ml-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold align-middle">
+                      [3]
+                    </span>
+</div>
+</div>
+</div>
+<!-- 3. "A NEWER VERSION EXISTS" WARNING BANNER -->
+<div class="rounded-DEFAULT p-4 bg-[#FBF0DA] text-[#7A4F0B] flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-[22px] text-[#B7791F] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-[#664106]">Notice on Source [3] Ratification Status</span>
+<p class="font-body-sm text-body-sm text-[#7A4F0B]">
+                    A 2024 draft revision (<span class="font-semibold underline">HOSP-BYLAW-88-RevB</span>) is currently under Pharmacy &amp; Therapeutics Committee review. The active 2022 policy remains legally binding until final ratification.
+                  </p>
+</div>
+</div>
+<!-- Quick Clinical Safety Guardrail Checklist -->
+<div class="p-5 rounded-DEFAULT bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Immediate Execution Checklist</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">RN Action Items</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px]">done</span>
+<span class="font-label-md text-label-md text-on-surface">Serum K⁺ &lt; 3.2 mEq/L</span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px]">done</span>
+<span class="font-label-md text-label-md text-on-surface">Creatinine &lt; 1.8 mg/dL</span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px]">done</span>
+<span class="font-label-md text-label-md text-on-surface">Telemetry Lead On</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- RIGHT PANEL: "SOURCES & TRUST CHECKLIST" 38% (~4.5 to 5 Cols) -->
+<aside class="lg:col-span-5 xl:col-span-5 flex flex-col gap-4">
+<!-- Trust Inspector Root Container -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-sm flex flex-col gap-5">
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">policy</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Trust Checklist</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Active Documents Audited</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                  100% Traceable
+                </span>
+</div>
+<!-- Interactive Source Cards Stack -->
+<div class="flex flex-col gap-4">
+<!-- Source 1 Card (Active / Selected) -->
+<div class="source-inspector-card p-4 rounded-DEFAULT bg-surface-container-low transition-all flex flex-col gap-3 relative" id="source-card-1">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">SOP-ED-402: Emergency Electrolyte Repletion</h3>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<!-- Badges Row -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+                      Regulatory / Clinical SOP
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-label-sm text-label-sm font-semibold">
+                      Current • Nov 12, 2024
+                    </span>
+</div>
+<!-- Exact Grounding Snippet -->
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT text-on-surface font-body-sm text-body-sm leading-relaxed">
+<span class="font-semibold text-on-surface">§ 4.2.1:</span> “In emergent hypokalemia, RN tier 2 or higher may dispense and administer potassium chloride IV piggyback (≤20 mEq/hr) per standing order...”
+                  </div>
+<!-- Trust Verification Checklist (All Green) -->
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT flex flex-col gap-2 font-label-sm text-label-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">check_circle</span>
+<span>Author: <strong class="text-on-surface">Dr. Marcus Reed</strong> (Chief of Emergency Medicine)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">check_circle</span>
+<span>Approver: <strong class="text-on-surface">Clinical Governance Committee</strong> (Signed Oct 28, 2024)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">check_circle</span>
+<span>Freshness: <strong class="text-[#2F7D5B]">Reviewed 18 days ago</strong> (Next review: Nov 2025)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">check_circle</span>
+<span>Payer Alignment: <strong class="text-on-surface">CMS / Joint Commission Compliant</strong></span>
+</div>
+</div>
+</div>
+<!-- Source 2 Card -->
+<div class="source-inspector-card p-4 rounded-DEFAULT bg-surface-container-low transition-all flex flex-col gap-3" id="source-card-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">LAB-REF-109: Renal Function Safety Thresholds</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+                      Clinical Guideline
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-label-sm text-label-sm font-semibold">
+                      Current • Effective Jan 2024
+                    </span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT text-on-surface font-body-sm text-body-sm">
+<span class="font-semibold">§ 2.4:</span> “Serum Creatinine &gt;1.8 mg/dL invalidates standing electrolyte infusion clearance without direct nephrology / attending consult...”
+                  </div>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-DEFAULT font-label-sm text-label-sm text-on-surface">
+<span class="flex items-center gap-1.5 text-[#2F7D5B] font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                      4/4 Verified Trust Audits Passed
+                    </span>
+<span class="text-on-surface-variant">Validated by Lab Directorate</span>
+</div>
+</div>
+<!-- Source 3 Card -->
+<div class="source-inspector-card p-4 rounded-DEFAULT bg-surface-container-low transition-all flex flex-col gap-3" id="source-card-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">HOSP-BYLAW-88: Inpatient Medication Sign-off Rules</h3>
+</div>
+<span class="material-symbols-outlined text-[#B7791F] text-[18px]">schedule</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+                      Internal Memo / Bylaw
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+                      Review Due (260d since check)
+                    </span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT text-on-surface font-body-sm text-body-sm">
+<span class="font-semibold">§ 11.B:</span> “Pediatric orders and unit transfers out of critical care zones mandate written attending physician countersignature...”
+                  </div>
+<!-- Trust Checklist with Overdue Alert -->
+<div class="p-3 bg-surface-container-lowest rounded-DEFAULT flex flex-col gap-1.5 font-label-sm text-label-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">check_circle</span>
+<span>Author: Hospital Operations Directorate</span>
+</div>
+<div class="flex items-center gap-2 text-[#B7791F]">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Freshness: Annual clinical audit overdue by 45 days</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. BOTTOM ACTION FOOTER IN RIGHT PANEL -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-3 px-4 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors">
+<span>Inspect Full Document Viewer</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+<div class="flex items-center justify-center gap-2 py-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[16px]">verified</span>
+<span>Cross-Policy Conflicts: <strong class="text-on-surface">0 detected</strong> across ED and Inpatient Bylaws</span>
+</div>
+</div>
+</div>
+<!-- Contextual Hospital Knowledge Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 shadow-sm flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-[#E4F2EA] flex items-center justify-center text-[#2F7D5B] shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_pharmacy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Formulary Tier Match</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">KCl IVPB is Unrestricted in St. Jude ED</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">arrow_forward</span>
+</div>
+</aside>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Client Behavior for Claim-to-Source Highlighting -->
+<script>
+    (function() {
+      const claim1 = document.getElementById('claim-sentence-1');
+      const claim2 = document.getElementById('claim-sentence-2');
+      const claim3 = document.getElementById('claim-sentence-3');
+
+      const card1 = document.getElementById('source-card-1');
+      const card2 = document.getElementById('source-card-2');
+      const card3 = document.getElementById('source-card-3');
+
+      const queryInput = document.getElementById('query-input');
+      const chipButtons = document.querySelectorAll('.chip-example');
+
+      function highlightClaim(claimIndex) {
+        // Reset claims
+        [claim1, claim2, claim3].forEach((el, idx) => {
+          if (!el) return;
+          if (idx + 1 === claimIndex) {
+            el.classList.add('bg-surface-container-lowest', 'shadow-sm');
+            el.classList.remove('bg-transparent');
+            let indicator = el.querySelector('span.absolute');
+            if (!indicator) {
+              const ind = document.createElement('span');
+              ind.className = 'absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-8 rounded-full bg-primary';
+              el.appendChild(ind);
+            }
+          } else {
+            el.classList.remove('bg-surface-container-lowest', 'shadow-sm');
+            const ind = el.querySelector('span.absolute');
+            if (ind) ind.remove();
+          }
+        });
+
+        // Highlight right cards
+        [card1, card2, card3].forEach((card, idx) => {
+          if (!card) return;
+          if (idx + 1 === claimIndex) {
+            card.classList.add('bg-surface-container-high', 'scale-[1.01]');
+            card.classList.remove('bg-surface-container-low');
+          } else {
+            card.classList.remove('bg-surface-container-high', 'scale-[1.01]');
+            card.classList.add('bg-surface-container-low');
+          }
+        });
+      }
+
+      if (claim1) claim1.addEventListener('click', () => highlightClaim(1));
+      if (claim2) claim2.addEventListener('click', () => highlightClaim(2));
+      if (claim3) claim3.addEventListener('click', () => highlightClaim(3));
+
+      if (card1) card1.addEventListener('click', () => highlightClaim(1));
+      if (card2) card2.addEventListener('click', () => highlightClaim(2));
+      if (card3) card3.addEventListener('click', () => highlightClaim(3));
+
+      chipButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (queryInput) {
+            queryInput.value = btn.innerText.trim();
+            queryInput.focus();
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-margin"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface font-semibold">TrustLens</span><span class="font-label-sm text-label-sm">Engineered by team Cache Me Outside</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" href="#">Clinical Validation</a><a class="hover:text-on-surface transition-colors" href="#">Security &amp; HIPAA</a><a class="hover:text-on-surface transition-colors" href="#">Ethics Dossier</a></div><div class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Cache Me Outside. All rights reserved.</div></div></div></footer></body></html>

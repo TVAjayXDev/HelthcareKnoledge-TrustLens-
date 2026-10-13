@@ -1,0 +1,76 @@
+{
+  "withoutPct": 70,
+  "withPct": 80,
+  "results": [
+    {
+      "id": 1,
+      "question": "Can registered nurses autonomously initiate protoc...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "Yes, under SOP-ED-402 RNs may autonomously initiate for serum levels < 3.2 mEq/L."
+    },
+    {
+      "id": 2,
+      "question": "Under Regional Health Plans commercial agreements ...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "Strictly 72 hours (3 calendar days)."
+    },
+    {
+      "id": 3,
+      "question": "Under State Standing Order statutes (NFH-REG-2024)...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "Up to 4 hours deferral permitted."
+    },
+    {
+      "id": 4,
+      "question": "According to Northfield Health critical laboratory...",
+      "withoutDocs": "FAIL",
+      "withDocs": "FAIL",
+      "expected": "Serum potassium < 3.0 mEq/L."
+    },
+    {
+      "id": 5,
+      "question": "Under Northfield Health cardiology guidance (CARD-...",
+      "withoutDocs": "PASS",
+      "withDocs": "FAIL",
+      "expected": "Yes, baseline 12-lead telemetry confirmation is mandatory."
+    },
+    {
+      "id": 6,
+      "question": "If Northfield revenue cycle SOP-REV-108 allows 5 b...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "Yes, Tier 3 Payer rule outranks Tier 4 Departmental SOP (conflict resolution)."
+    },
+    {
+      "id": 7,
+      "question": "What is the scheduled clinical governance review s...",
+      "withoutDocs": "FAIL",
+      "withDocs": "PASS",
+      "expected": "Review is overdue by ~89 days."
+    },
+    {
+      "id": 8,
+      "question": "Is the unratified draft document HOSP-BYLAW-88-Rev...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "No, it is an unratified draft pending P&T committee review and cannot be used for clinical decisions."
+    },
+    {
+      "id": 9,
+      "question": "What is Northfield Health's ratified clinical guid...",
+      "withoutDocs": "FAIL",
+      "withDocs": "PASS",
+      "expected": "No ratified policy exists; system must refuse to hallucinate (Safety Silence)."
+    },
+    {
+      "id": 10,
+      "question": "According to ICU nursing protocol ICU-CENT-14, is ...",
+      "withoutDocs": "PASS",
+      "withDocs": "PASS",
+      "expected": "Overdue for scheduled review (~116 days)."
+    }
+  ]
+}

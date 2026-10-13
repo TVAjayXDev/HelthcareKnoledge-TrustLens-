@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>TrustLens — Clinical AI Intelligence</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#efeeea","tertiary-fixed-dim":"#d0bcff","surface-container-lowest":"#ffffff","background":"#faf9f5","on-tertiary-container":"#9466ff","on-primary-container":"#858383","on-secondary-container":"#61615c","outline-variant":"#c4c7c7","primary-fixed":"#e5e2e1","tertiary-container":"#23005c","on-secondary-fixed":"#1b1c18","error-container":"#ffdad6","on-surface":"#1b1c1a","inverse-surface":"#30312e","secondary":"#5e5f5a","surface-container-high":"#e9e8e4","secondary-fixed":"#e4e2dc","surface-container-low":"#f5f4f0","on-secondary":"#ffffff","surface":"#faf9f5","surface-dim":"#dbdad6","on-tertiary":"#ffffff","on-background":"#1b1c1a","surface-tint":"#5f5e5e","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5516be","surface-container-highest":"#e3e2df","on-error":"#ffffff","tertiary-fixed":"#e9ddff","primary-fixed-dim":"#c8c6c5","secondary-container":"#deddd7","inverse-primary":"#c8c6c5","primary-container":"#1c1b1b","surface-bright":"#faf9f5","error":"#ba1a1a","on-tertiary-fixed":"#23005c","on-surface-variant":"#444748","outline":"#747878","on-primary-fixed-variant":"#474646","inverse-on-surface":"#f2f1ed","on-secondary-fixed-variant":"#474743","primary":"#000000","surface-variant":"#e3e2df","secondary-fixed-dim":"#c8c7c0","on-primary":"#ffffff","on-primary-fixed":"#1c1b1b","tertiary":"#000000"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"display":["Inter"]},"fontSize":{"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"display-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"display":["72px",{"lineHeight":"76px","letterSpacing":"-0.035em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen selection:bg-surface-container-highest selection:text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="TrustLens Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcm2kHrKx85it8dy_KSuWbpPW6vc7PBBacU2nuRdKLFnC43io_jBfEa6fkAn_vY5zfhqJuJfp6lxA0RQJgdCCX6lm26k0SYAoHtKSc1c5IKyhmaQcLySQZraFLwtybkMVYy1fj7rHB2B9TIX8_thkVOQqvgW6SQQxiV5vYDVG5QMtBf2A-zBfiUhTx0BYO8uNMVxWRE4aXGugiO4f2doKnACiPAxOhAxKY4Eo3A95avJhfJs3dqK2V"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">TrustLens</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Healthcare AI</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full" data-active-classes="text-on-surface font-semibold bg-surface-container-low"><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-trust-works" href="#">How Trust Works</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="live-demo" href="#">Live Demo</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="knowledge-gaps" href="#">Knowledge Gaps</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="team" href="#">Team</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 py-1 px-3 rounded-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><span class="w-1.5 h-1.5 rounded-full bg-[#2F7D5B] animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide">Hospital Portal • St. Jude Health</span></div><a class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-neutral-800 transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-sm" data-path="live-demo" href="#">Try the Demo</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive & Notification Styles (Pure utilities, zero custom style block) -->
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pb-24 pt-6 space-y-8">
+<!-- Top Context & Header Row -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="space-y-2 max-w-3xl">
+<!-- Breadcrumb / System Tag -->
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary uppercase tracking-widest">
+<span>Clinical Governance</span>
+<span class="text-secondary/40">/</span>
+<span>Knowledge Audit</span>
+<span class="text-secondary/40">/</span>
+<span class="text-on-surface font-semibold">Campus Safety Overview</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Knowledge Gaps &amp; Corpus Integrity
+        </h1>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+          Real-time telemetry on unanswered clinical inquiries, expired hospital policies, and cross-departmental documentation conflicts across St. Jude Health System.
+        </p>
+</div>
+<!-- Action & Timeframe Controls -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Timeframe Segmented Control -->
+<div class="inline-flex items-center p-1 bg-surface-container rounded-full" id="timeframe-selector">
+<button class="px-4 py-1.5 rounded-full font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all" type="button">Past 7 Days</button>
+<button class="px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm" type="button">Past 30 Days</button>
+<button class="px-4 py-1.5 rounded-full font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all" type="button">Quarter-to-Date</button>
+<button class="px-4 py-1.5 rounded-full font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all" type="button">All-Time</button>
+</div>
+<!-- Export Action Pill -->
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span>Export Governance Report (PDF)</span>
+</button>
+</div>
+</div>
+<!-- 4 Summary Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1: Unanswered Questions -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-start justify-between mb-4">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Unanswered Inquiries</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FBE6E4] text-[#B4403A] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">gpp_maybe</span>
+            Needs Policy Coverage
+          </span>
+</div>
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-display-mobile text-display-mobile font-bold tracking-tight text-on-surface">42</span>
+<span class="font-label-sm text-label-sm text-[#B4403A] font-medium">+8 this week</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4 leading-normal">
+          Triggered clinical safety silence guardrail due to zero validated ground truth.
+        </p>
+<!-- Mini Sparkline Visualization -->
+<div class="w-full pt-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-secondary/70 mb-1.5">
+<span>Safety Inhibit Frequency</span>
+<span>2.8% of volume</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#B4403A] rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<!-- Metric 2: Outdated Documents -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between mb-4">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Outdated Documents</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">history_toggle_off</span>
+            Audit Overdue
+          </span>
+</div>
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-display-mobile text-display-mobile font-bold tracking-tight text-on-surface">184</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">of 2,410 total</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4 leading-normal">
+          Past biennial clinical governance threshold (&gt;730 days without review).
+        </p>
+<div class="w-full pt-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-secondary/70 mb-1.5">
+<span>Corpus Decay Rate</span>
+<span>7.6% aging</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#B7791F] rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</div>
+<!-- Metric 3: Conflicts Found -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between mb-4">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Cross-Policy Conflicts</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FBE6E4] text-[#B4403A] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">rule</span>
+            High Regulatory Risk
+          </span>
+</div>
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-display-mobile text-display-mobile font-bold tracking-tight text-on-surface">7</span>
+<span class="font-label-sm text-label-sm text-[#B4403A] font-medium">3 Dept Crossovers</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4 leading-normal">
+          Active statutory guidelines vs institutional SOP procedural mismatches.
+        </p>
+<div class="w-full pt-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-secondary/70 mb-1.5">
+<span>Critical Discrepancies</span>
+<span>100% flagged</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#B4403A] rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+</div>
+<!-- Metric 4: Never-Reviewed Documents -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between mb-4">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Unratified Uploads</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">draft</span>
+            Orphaned Drafts
+          </span>
+</div>
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-display-mobile text-display-mobile font-bold tracking-tight text-on-surface">29</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Pending Review</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4 leading-normal">
+          Draft departmental guidelines ingested with zero formal committee sign-off.
+        </p>
+<div class="w-full pt-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-secondary/70 mb-1.5">
+<span>Awaiting Verification</span>
+<span>Action Required</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Value & Impact Highlight Card -->
+<div class="bg-surface-container-lowest rounded-lg p-6 lg:p-8 shadow-sm relative overflow-hidden">
+<!-- Ambient Intelligence Radial Glow behind card -->
+<div class="absolute -top-16 -right-16 w-80 h-80 rounded-full bg-gradient-to-br from-[#8B5CF6]/10 via-[#3B82F6]/10 to-[#14B8A6]/10 blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+<!-- Left: Value Headline & Metric -->
+<div class="space-y-3 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#E4F2EA] text-[#2F7D5B]">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</span>
+<span class="font-label-md text-label-md text-secondary font-semibold uppercase tracking-wider">Clinical Efficiency &amp; Safety Yield</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">1,420 hours</span>
+<span class="font-body-lg text-body-lg text-secondary">of clinician manual search eliminated this month</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2F7D5B]"></span>
+              Equiv. to <strong>3.8 Full-Time Coordinators</strong>
+</span>
+<span class="text-secondary/40">•</span>
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2F7D5B]"></span>
+<strong>Zero</strong> bedside hallucinatory incidents
+            </span>
+<span class="text-secondary/40">•</span>
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2F7D5B]"></span>
+<strong>99.4%</strong> Provenance Citation Adherence
+            </span>
+</div>
+</div>
+<!-- Right: ROI & Verification Badge -->
+<div class="shrink-0 flex flex-col sm:flex-row lg:flex-col items-start lg:items-end gap-3 w-full lg:w-auto">
+<div class="px-4 py-2.5 rounded-full bg-[#E4F2EA]/70 text-[#2F7D5B] font-label-md text-label-md flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+<span class="font-semibold">Est. Monthly ROI: $118,400</span>
+<span class="text-[#2F7D5B]/70 font-normal">in saved admin overhead</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary lg:text-right">
+            Measured across 14,890 verified queries in EMR context
+          </span>
+</div>
+</div>
+</div>
+<!-- Mid Section Split (7 Cols / 5 Cols on Desktop) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Knowledge Gap Registry Table (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-lg p-6 lg:p-7 shadow-sm space-y-6">
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Questions We Couldn't Answer</h2>
+<span class="w-2 h-2 rounded-full bg-[#B4403A] animate-pulse"></span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+              Inquiries where AI synthesis was inhibited due to lack of ratified hospital guidance.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container text-secondary shrink-0">
+            Top Priority Sort
+          </span>
+</div>
+<!-- Interactive Filter Strip -->
+<div class="flex items-center justify-between gap-3 p-2 bg-surface-container-low rounded-lg text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-secondary px-2">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Filter by Risk:</span>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto">
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">All (42)</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface">Urgent Only (9)</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface">Pharmacy (8)</button>
+</div>
+</div>
+<!-- Registry Cards Stack -->
+<div class="space-y-3.5">
+<!-- Item 1: Urgent -->
+<div class="p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all space-y-3 group">
+<div class="flex items-start justify-between gap-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Ambulatory Care / Telehealth</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">
+                  “What is our policy on telehealth prescribing for Schedule II-IV controlled substances?”
+                </p>
+</div>
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FBE6E4] text-[#B4403A] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                Urgent (High Risk)
+              </span>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-4 text-secondary">
+<span class="flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">query_stats</span>
+                  Asked 38 times
+                </span>
+<span class="text-secondary/40">•</span>
+<span class="text-[#B4403A] font-medium text-label-sm">Trending High this week</span>
+</div>
+<!-- Remediation Doc Link -->
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-sm font-label-sm shadow-sm hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[14px]">assignment_add</span>
+<span>Assign SOP-AMB-Draft</span>
+</a>
+</div>
+</div>
+<!-- Item 2: High -->
+<div class="p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all space-y-3 group">
+<div class="flex items-start justify-between gap-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Step-Down &amp; Progressive Care</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">
+                  “Can nursing staff adjust IV propofol titration rate in Step-Down units without intensivist co-sign?”
+                </p>
+</div>
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">priority_high</span>
+                High
+              </span>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-4 text-secondary">
+<span class="flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">query_stats</span>
+                  Asked 24 times
+                </span>
+<span class="text-secondary/40">•</span>
+<span class="text-secondary">Needs Clinical Council Review</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-sm font-label-sm shadow-sm hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[14px]">edit_document</span>
+<span>Ratify ICU-STEP-202</span>
+</a>
+</div>
+</div>
+<!-- Item 3: Medium -->
+<div class="p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all space-y-3 group">
+<div class="flex items-start justify-between gap-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Pediatric Oncology / UR</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">
+                  “What is the prior authorization appeal turnaround for emergency pediatric oncology PET scans?”
+                </p>
+</div>
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+                Medium
+              </span>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-4 text-secondary">
+<span class="flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">query_stats</span>
+                  Asked 19 times
+                </span>
+<span class="text-secondary/40">•</span>
+<span class="text-secondary">Payer Exception Path Missing</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-sm font-label-sm shadow-sm hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[14px]">add_circle</span>
+<span>Add PAYER-ONC-2024</span>
+</a>
+</div>
+</div>
+<!-- Item 4: Medium -->
+<div class="p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all space-y-3 group">
+<div class="flex items-start justify-between gap-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Emergency Medicine &amp; Patient Access</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">
+                  “Are medical interpreters mandated for telephone triage discharge callbacks in non-English LEP patients?”
+                </p>
+</div>
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+                Medium
+              </span>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-4 text-secondary">
+<span class="flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">query_stats</span>
+                  Asked 14 times
+                </span>
+<span class="text-secondary/40">•</span>
+<span class="text-secondary">Language Access Compliance</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-sm font-label-sm shadow-sm hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[14px]">add_circle</span>
+<span>Publish LEP-LANG-104</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card Action Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3">
+<button class="inline-flex items-center gap-2 text-secondary hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span>Log New Gap Manually</span>
+</button>
+<button class="inline-flex items-center gap-1.5 font-label-md text-label-md font-semibold text-on-surface hover:translate-x-0.5 transition-transform" type="button">
+<span>View All 42 Unanswered Inquiries</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Analytics & Stale Documents (5 Columns) -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Card 1: Knowledge Gaps by Department Bar Chart -->
+<div class="bg-surface-container-lowest rounded-lg p-6 lg:p-7 shadow-sm space-y-5">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gaps by Department</h2>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Distribution of unratified procedural queries.</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">donut_large</span>
+</div>
+<!-- Clean Horizontal Bar Chart -->
+<div class="space-y-4 pt-1">
+<!-- Item 1: Emergency Medicine -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Emergency Medicine</span>
+<span class="text-secondary font-label-sm">14 gaps • <strong class="text-on-surface">33%</strong></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 33%;"></div>
+</div>
+</div>
+<!-- Item 2: Ambulatory & Telehealth -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Ambulatory &amp; Telehealth</span>
+<span class="text-secondary font-label-sm">11 gaps • <strong class="text-on-surface">26%</strong></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/80 rounded-full transition-all duration-500" style="width: 26%;"></div>
+</div>
+</div>
+<!-- Item 3: Pharmacy & Therapeutics -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Pharmacy &amp; Therapeutics</span>
+<span class="text-secondary font-label-sm">8 gaps • <strong class="text-on-surface">19%</strong></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/60 rounded-full transition-all duration-500" style="width: 19%;"></div>
+</div>
+</div>
+<!-- Item 4: Patient Financial Services -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Patient Financial Services</span>
+<span class="text-secondary font-label-sm">5 gaps • <strong class="text-on-surface">12%</strong></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/40 rounded-full transition-all duration-500" style="width: 12%;"></div>
+</div>
+</div>
+<!-- Item 5: Critical Care / ICU -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Critical Care / ICU</span>
+<span class="text-secondary font-label-sm">4 gaps • <strong class="text-on-surface">10%</strong></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/20 rounded-full transition-all duration-500" style="width: 10%;"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Note -->
+<div class="pt-2 text-label-sm font-label-sm text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-[#2F7D5B]">insights</span>
+<span>ED triage pathways account for 41% of clinical staff inquiries.</span>
+</div>
+</div>
+<!-- Card 2: Stale Documents Requiring Clinical Re-Audit -->
+<div class="bg-surface-container-lowest rounded-lg p-6 lg:p-7 shadow-sm space-y-5">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Stale Documents Requiring Audit</h2>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Hospital policies with highest clinician citations past expiration.
+              </p>
+</div>
+<span class="material-symbols-outlined text-[#B7791F] text-[20px]">hourglass_empty</span>
+</div>
+<!-- Document List Items -->
+<div class="space-y-3">
+<!-- Stale Doc 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<p class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">
+                  SOP-REV-108: Inpatient Prior Authorization Workflow
+                </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary">
+<span>Owner: Patient Financial Services</span>
+<span class="text-secondary/40">•</span>
+<span>HOC Committee</span>
+</div>
+</div>
+<span class="shrink-0 self-start sm:self-center inline-flex items-center px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+                260 days overdue
+              </span>
+</div>
+<!-- Stale Doc 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<p class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">
+                  HOSP-BYLAW-88: Inpatient Controlled Substance Waste
+                </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary">
+<span>Owner: Inpatient Pharmacy</span>
+<span class="text-secondary/40">•</span>
+<span>Dr. A. Cho</span>
+</div>
+</div>
+<span class="shrink-0 self-start sm:self-center inline-flex items-center px-2.5 py-1 rounded-full bg-[#FBE6E4] text-[#B4403A] font-label-sm text-label-sm font-semibold">
+                342 days overdue
+              </span>
+</div>
+<!-- Stale Doc 3 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<p class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">
+                  ICU-CENT-14: Central Venous Catheter Dressing Frequency
+                </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary">
+<span>Owner: Nursing Governance</span>
+<span class="text-secondary/40">•</span>
+<span>Nurse Exec Council</span>
+</div>
+</div>
+<span class="shrink-0 self-start sm:self-center inline-flex items-center px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+                114 days overdue
+              </span>
+</div>
+<!-- Stale Doc 4 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<p class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">
+                  PEDS-FEVER-03: Pediatric Febrile Infant Stratification
+                </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary">
+<span>Owner: Pediatric ED</span>
+<span class="text-secondary/40">•</span>
+<span>Dr. M. Vance</span>
+</div>
+</div>
+<span class="shrink-0 self-start sm:self-center inline-flex items-center px-2.5 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold">
+                88 days overdue
+              </span>
+</div>
+</div>
+<!-- Bottom Action Button -->
+<div class="pt-2">
+<button class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all active:scale-[0.99] shadow-sm" id="notify-owners-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+<span>Notify All 4 Document Owners</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Governance Protocol Assurance Banner -->
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">encrypted</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Continuous Statutory Reconciliation Engine Active</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            TrustLens checks CMS, Joint Commission, and DEA Federal Register changes every 6 hours against active hospital SOPs.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="w-2 h-2 rounded-full bg-[#2F7D5B]"></span>
+<span class="font-label-sm text-label-sm font-semibold text-[#2F7D5B]">HIPAA / BAA Active • SOC-2 Type II Certified</span>
+</div>
+</div>
+</div>
+<!-- Micro-interaction script for button state -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const notifyBtn = document.getElementById('notify-owners-btn');
+      if (notifyBtn) {
+        notifyBtn.addEventListener('click', () => {
+          const originalContent = notifyBtn.innerHTML;
+          notifyBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[18px] text-[#2F7D5B]">check_circle</span>
+            <span class="text-[#2F7D5B] font-semibold">Automated Auditing Pings Sent to 4 Authors</span>
+          `;
+          notifyBtn.classList.add('bg-[#E4F2EA]');
+          setTimeout(() => {
+            notifyBtn.innerHTML = originalContent;
+            notifyBtn.classList.remove('bg-[#E4F2EA]');
+          }, 3500);
+        });
+      }
+
+      // Timeframe buttons toggle micro-interaction
+      const timeframeContainer = document.getElementById('timeframe-selector');
+      if (timeframeContainer) {
+        const buttons = timeframeContainer.querySelectorAll('button');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+              b.className = 'px-4 py-1.5 rounded-full font-label-sm text-label-sm text-secondary hover:text-on-surface transition-all';
+            });
+            btn.className = 'px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm';
+          });
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-margin"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface font-semibold">TrustLens</span><span class="font-label-sm text-label-sm">Engineered by team Cache Me Outside</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" href="#">Clinical Validation</a><a class="hover:text-on-surface transition-colors" href="#">Security &amp; HIPAA</a><a class="hover:text-on-surface transition-colors" href="#">Ethics Dossier</a></div><div class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Cache Me Outside. All rights reserved.</div></div></div></footer></body></html>

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#deddd7","on-tertiary-container":"#9466ff","outline-variant":"#c4c7c7","surface-dim":"#dbdad6","surface":"#faf9f5","on-primary":"#ffffff","secondary":"#5e5f5a","secondary-fixed-dim":"#c8c7c0","on-primary-fixed-variant":"#474646","on-primary-container":"#858383","on-error":"#ffffff","on-background":"#1b1c1a","on-primary-fixed":"#1c1b1b","surface-tint":"#5f5e5e","error-container":"#ffdad6","primary-fixed":"#e5e2e1","inverse-surface":"#30312e","on-secondary-fixed-variant":"#474743","secondary-fixed":"#e4e2dc","tertiary-fixed":"#e9ddff","error":"#ba1a1a","primary-container":"#1c1b1b","on-tertiary-fixed":"#23005c","inverse-on-surface":"#f2f1ed","surface-container-highest":"#e3e2df","on-surface":"#1b1c1a","surface-bright":"#faf9f5","tertiary":"#000000","on-secondary-fixed":"#1b1c18","on-tertiary":"#ffffff","surface-container-high":"#e9e8e4","tertiary-fixed-dim":"#d0bcff","on-tertiary-fixed-variant":"#5516be","on-error-container":"#93000a","surface-container":"#efeeea","on-secondary":"#ffffff","background":"#faf9f5","on-surface-variant":"#444748","primary-fixed-dim":"#c8c6c5","surface-container-lowest":"#ffffff","tertiary-container":"#23005c","on-secondary-container":"#61615c","primary":"#000000","surface-variant":"#e3e2df","outline":"#747878","surface-container-low":"#f5f4f0","inverse-primary":"#c8c6c5"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin-mobile":"1.25rem","space-xl":"2.5rem",gutter:"1.5rem","gutter-mobile":"1rem","space-xs":"0.25rem",margin:"3rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},fontFamily:{"label-sm":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"display-mobile":["Inter"],"headline-lg":["Inter"],display:["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"26px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg-mobile":["32px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"label-md":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"display-mobile":["40px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-lg":["48px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"600"}],display:["72px",{lineHeight:"76px",letterSpacing:"-0.035em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">TrustLens</span><span class="h-1.5 w-1.5 rounded-full bg-primary"></span></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Healthcare AI</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-surface-container-low/80 p-1.5 rounded-full" data-active-classes="bg-surface-container-high text-on-surface font-label-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-4 py-2 rounded-full transition-colors" data-path="how-trust-works" href="#">How Trust Works</a><a aria-current="page" class="px-4 py-2 rounded-full transition-colors bg-surface-container-high text-on-surface font-label-md" data-path="live-demo" href="#">Live Demo</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-4 py-2 rounded-full transition-colors" data-path="knowledge-gaps" href="#">Knowledge Gaps</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-4 py-2 rounded-full transition-colors" data-path="team" href="#">Team</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_1px_6px_rgba(0,0,0,0.02)]"><span class="w-2 h-2 rounded-full bg-[#2F7D5B]"></span><span class="font-label-sm text-label-sm text-secondary">Hospital Portal • Northfield Health</span></div><a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-inverse-surface hover:text-inverse-on-surface transition-all" data-path="live-demo" href="#">Try the Demo</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full bg-surface-container-low/70 py-1 px-margin text-center"><p class="font-label-sm text-label-sm text-secondary">Synthetic preview environment • Demo uses synthetic data. Not clinical guidance.</p></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Interactive Sandbox Top Ambient Scrim -->
+<div class="relative w-full overflow-hidden pb-12">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[980px] h-[340px] pointer-events-none opacity-20 blur-[90px] bg-gradient-to-r from-on-tertiary-container via-surface-tint to-outline-variant rounded-full"></div>
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-6 flex flex-col gap-space-lg">
+<!-- Notice Banner -->
+<div class="w-full bg-surface-container-lowest rounded-full px-5 py-2.5 shadow-sm flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="flex h-2.5 w-2.5 rounded-full bg-[#2F7D5B] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Demo Mode Active</span>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface">Interactive Clinical Corpus Sandbox for <strong class="font-semibold text-on-surface">Northfield Health</strong>.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Answers only from your documents, or stays silent.</span>
+</div>
+</div>
+<!-- Header & Action Header Strip -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pt-2">
+<div class="flex flex-col max-w-3xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high w-fit mb-3">
+<span class="material-symbols-outlined text-[14px] text-on-surface">labs</span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider uppercase">Interactive Sandbox</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Test Verified Clinical Synthesis in Real Time</h1>
+<p class="font-body-lg text-body-lg text-secondary mt-2">
+            Explore how TrustLens verifies hospital guidance against Northfield Health’s synthetic policy corpus across three common clinical scenarios.
+          </p>
+</div>
+<!-- Header Actions -->
+<div class="flex flex-wrap items-center gap-3 self-start lg:self-auto shrink-0">
+<button class="inline-flex items-center gap-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md px-5 py-2.5 rounded-full shadow-sm hover:bg-surface-container-low transition-all" id="upload-doc-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">upload_file</span>
+<span>Upload custom corpus</span>
+</button>
+<button class="inline-flex items-center gap-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md px-5 py-2.5 rounded-full shadow-sm hover:bg-surface-container-low transition-all" id="reset-sandbox-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">restart_alt</span>
+<span>Reset Sandbox</span>
+</button>
+</div>
+</div>
+<!-- Sample Documents Loaded Strip -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary">inventory_2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Synthetic Corpus Loaded</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2.5 py-0.5 rounded-full text-secondary">5 Active Documents</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Last synchronized: 14 mins ago • Index hash #NFH-4491-SY</span>
+</div>
+<!-- 5 Document Cards Horizontal Scroller / Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 pt-1">
+<!-- Doc 1 -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col justify-between gap-3 transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary truncate">NFH-REG-2024</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Tier 1</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-semibold line-clamp-2" title="State Standing Order Delegation Rule">
+                State Standing Order Delegation Rule
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Statutes</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2F7D5B] bg-[#E4F2EA] px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Current
+              </span>
+</div>
+</div>
+<!-- Doc 2 -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col justify-between gap-3 transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary truncate">CARD-GUIDE-2024</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Tier 2</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-semibold line-clamp-2" title="Inpatient Potassium Repletion Guideline">
+                Inpatient Potassium Repletion Guideline
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Guidelines</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2F7D5B] bg-[#E4F2EA] px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Current
+              </span>
+</div>
+</div>
+<!-- Doc 3 -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col justify-between gap-3 transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary truncate">PAYER-RHP-2024</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Tier 3</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-semibold line-clamp-2" title="Prior Authorization Escalation Standard">
+                Prior Authorization Escalation Standard
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Payer Rule</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2F7D5B] bg-[#E4F2EA] px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Current
+              </span>
+</div>
+</div>
+<!-- Doc 4 -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col justify-between gap-3 transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary truncate">SOP-ED-402</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Tier 4</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-semibold line-clamp-2" title="ED Potassium Repletion Standing Protocol">
+                ED Potassium Repletion Standing Protocol
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Internal SOP</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2F7D5B] bg-[#E4F2EA] px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Current
+              </span>
+</div>
+</div>
+<!-- Doc 5 -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col justify-between gap-3 transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary truncate">SOP-REV-108</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Tier 4</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-semibold line-clamp-2" title="Prior Authorization Workflow">
+                Prior Authorization Workflow
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Internal SOP</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#B7791F] bg-[#FBF0DA] px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">warning</span> Review overdue
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Scenario Selector Cards -->
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Select Verification Archetype</span>
+<span class="text-secondary">•</span>
+<span class="font-body-sm text-body-sm text-secondary">3 pre-indexed scenarios demonstrative of grounded AI governance</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Scenario Card 1: Active -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-2xl p-6 shadow-md transition-all flex flex-col justify-between gap-6 relative overflow-hidden group" id="card-scenario-a" onclick="switchScenario('A')">
+<div class="absolute top-0 right-0 h-1.5 w-full bg-primary" id="scenario-a-pill-active"></div>
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  High Confidence • Verified
+                </span>
+<span class="font-label-sm text-label-sm text-secondary">Scenario A</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verified Clinical Synthesis</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                Nurse asks about IV potassium protocol. Multi-source verification confirms exact dosage and autonomous RN threshold with zero physician co-sign.
+              </p>
+<div class="bg-surface-container-low rounded-xl p-3 mt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">Query Probe:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">"Can nursing staff initiate IV potassium without attending physician co-signature?"</p>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-5 py-3 rounded-full transition-all" id="btn-scenario-a">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Run this scenario (Active)</span>
+</button>
+</div>
+<!-- Scenario Card 2: Conflict -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 relative overflow-hidden group" id="card-scenario-b" onclick="switchScenario('B')">
+<div class="hidden absolute top-0 right-0 h-1.5 w-full bg-primary" id="scenario-b-pill-active"></div>
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FBE6E4] text-[#B4403A] font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px]">compare_arrows</span>
+                  Cross-Policy Conflict
+                </span>
+<span class="font-label-sm text-label-sm text-secondary">Scenario B</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Payer vs SOP Precedence</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                Payer rule requires urgent 72-hour turnaround while internal institutional SOP allows 5 business days. System detects conflict and enforces Tier 3 precedence.
+              </p>
+<div class="bg-surface-container-low rounded-xl p-3 mt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">Query Probe:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">"How long can a patient wait for prior authorization approval before urgent escalation?"</p>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-on-surface font-label-md text-label-md px-5 py-3 rounded-full hover:bg-surface-container transition-all" id="btn-scenario-b">
+<span>Run this scenario</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</button>
+</div>
+<!-- Scenario Card 3: Silence -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 relative overflow-hidden group" id="card-scenario-c" onclick="switchScenario('C')">
+<div class="hidden absolute top-0 right-0 h-1.5 w-full bg-primary" id="scenario-c-pill-active"></div>
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FBF0DA] text-[#B7791F] font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px]">gpp_maybe</span>
+                  Silence Guard • Grounded Only
+                </span>
+<span class="font-label-sm text-label-sm text-secondary">Scenario C</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Safe Silence ("I Don't Know")</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                Staff inquires on telehealth controlled substance initiation. Northfield Health has no ratified SOP; system enforces grounding guard and logs gap.
+              </p>
+<div class="bg-surface-container-low rounded-xl p-3 mt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">Query Probe:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">"What is our policy on telehealth prescribing for Schedule II-IV controlled substances?"</p>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-on-surface font-label-md text-label-md px-5 py-3 rounded-full hover:bg-surface-container transition-all" id="btn-scenario-c">
+<span>Run this scenario</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Synthesis Interactive Console -->
+<div class="flex flex-col gap-space-md pt-2">
+<!-- Search & Query Execution Bar -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-4 md:p-6 shadow-sm flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<div class="relative flex-1">
+<svg class="w-5 h-5 text-secondary absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low rounded-full font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-all" id="clinical-query-input" placeholder="Try your own question against Northfield Health corpus..." type="text" value="Can nursing staff initiate IV potassium without attending physician co-signature?"/>
+</div>
+<button class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-7 py-3.5 rounded-full hover:bg-inverse-surface transition-all shrink-0" id="run-synthesis-btn">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Synthesize Query</span>
+</button>
+</div>
+<!-- Suggested query chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-secondary">Quick Questions:</span>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" onclick="setQuery('Can nursing staff initiate IV potassium without attending physician co-signature?'); switchScenario('A');">
+              IV Potassium Autonomy
+            </button>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" onclick="setQuery('How long can a patient wait for prior authorization approval before urgent escalation?'); switchScenario('B');">
+              Prior Auth Wait Standard
+            </button>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" onclick="setQuery('What is our policy on telehealth prescribing for Schedule II-IV controlled substances?'); switchScenario('C');">
+              Schedule II Telehealth Prescribing
+            </button>
+<button class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" onclick="setQuery('What are the central line requirements for 40 mEq potassium infusion?'); switchScenario('A');">
+              Central Line 40mEq Protocol
+            </button>
+</div>
+</div>
+<!-- Dynamic Output Container: Left (60%) Grounded Answer, Right (40%) Trust Checklist -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="output-view-container">
+<!-- LEFT PANEL: 8 cols (66%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Grounded Answer Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-6 relative overflow-hidden" id="answer-card">
+<!-- Subtle decorative radial accent behind confidence -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-[#2F7D5B]/10 rounded-full blur-3xl pointer-events-none" id="accent-glow"></div>
+<!-- Answer Header with Score -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-4">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-[#E4F2EA] flex items-center justify-center shrink-0" id="confidence-indicator-bg">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[22px]" id="confidence-indicator-icon">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="answer-status-title">Verified Clinical Synthesis</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-bold" id="confidence-score-badge">98% Grounded</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary" id="answer-subtitle">Grounded answer • 0 unverified claims</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-low text-secondary transition-colors" onclick="copySynthesis()" title="Copy synthesis">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container-low text-secondary transition-colors" onclick="printSynthesis()" title="Print clinical dossier">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Synthesis Body -->
+<div class="flex flex-col gap-4 font-body-md text-body-md text-on-surface leading-relaxed" id="synthesis-body-content">
+<!-- SCENARIO A CONTENT BY DEFAULT -->
+<p>
+<strong>Yes.</strong> Registered nursing staff at Northfield Health may initiate intravenous potassium replacement autonomously, provided serum potassium is documented below <strong>3.2 mEq/L</strong> and the dose adheres strictly to the standardized ED nurse-driven protocol 
+                  <sup class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer hover:bg-primary hover:text-on-primary transition-all ml-0.5" title="SOP-ED-402, Section 3.2">[1]</sup>.
+                </p>
+<!-- RN Action Protocol Checklist -->
+<div class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-3 my-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">fact_check</span>
+                    Autonomous RN Initiation Criteria Checklist
+                  </span>
+<ul class="space-y-2.5">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Baseline ECG Verified:</strong> Continuous telemetry established with no existing wide QRS or heart block <sup class="text-secondary font-label-sm">[2]</sup>.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Rate Limitation:</strong> Peripheral IV infusion not to exceed 10 mEq/hr; central line rate cap is 20 mEq/hr with mandatory infusion pump lock <sup class="text-secondary font-label-sm">[1]</sup>.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Co-Signature Requirement:</strong> Attending physician co-signature is <em>deferred for up to 4 hours</em> following administration under Standing Order SOP-ED-402 <sup class="text-secondary font-label-sm">[1, 3]</sup>.</span>
+</li>
+</ul>
+</div>
+<p class="text-secondary font-body-sm text-body-sm">
+                  Clinical warning: If renal impairment is documented (eGFR < 30 mL/min or creatinine > 2.0 mg/dL), standing nurse order is strictly suspended and mandatory nephrology or attending consultation is required prior to infusion initiation.
+                </p>
+</div>
+<!-- Claim grounding footer tag -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-4 bg-surface-container-low/50 -mx-6 -mb-6 p-4 px-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface" id="footer-grounded-text">All 3 claims grounded in Northfield Health retrieved documents.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary">Audit Token:</span>
+<code class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface">#NFH-VER-0941</code>
+</div>
+</div>
+</div>
+<!-- Inline Verification Chart SVG: Citation Distribution & Accuracy -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Synthesized Claim Grounding Distribution</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Token Match Certainty: 99.4%</span>
+</div>
+<!-- Inline Chart Graphic -->
+<div class="w-full flex flex-col gap-2 pt-2">
+<div class="w-full flex items-center gap-3">
+<span class="w-24 font-label-sm text-label-sm text-secondary truncate">Claim 1 (Dosage)</span>
+<div class="flex-1 bg-surface-container-low h-3 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 98%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-10 text-right">98%</span>
+</div>
+<div class="w-full flex items-center gap-3">
+<span class="w-24 font-label-sm text-label-sm text-secondary truncate">Claim 2 (ECG)</span>
+<div class="flex-1 bg-surface-container-low h-3 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-10 text-right">100%</span>
+</div>
+<div class="w-full flex items-center gap-3">
+<span class="w-24 font-label-sm text-label-sm text-secondary truncate">Claim 3 (RN Auth)</span>
+<div class="flex-1 bg-surface-container-low h-3 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 96%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold w-10 text-right">96%</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary">Zero probabilistic extrapolation detected</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2F7D5B]">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> Grounding guard active
+                </span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: 5 cols (40%) Trust Checklist & Citations -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Trust Checklist Dossier -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Trust Checklist Panel</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-[#E4F2EA] text-[#2F7D5B] font-bold" id="checklist-counter">5 / 5 Passed</span>
+</div>
+<!-- Verification Steps Checklist -->
+<div class="flex flex-col gap-3.5">
+<!-- Check 1 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[20px] shrink-0 mt-0.5" id="check-icon-1">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tier Precedence Enforced</span>
+<span class="font-body-sm text-body-sm text-secondary" id="check-desc-1">Tier 2 Clinical Guidelines & Tier 4 Institutional SOPs aligned without contradiction.</span>
+</div>
+</div>
+<!-- Check 2 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[20px] shrink-0 mt-0.5" id="check-icon-2">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Corpus Freshness & Ratification</span>
+<span class="font-body-sm text-body-sm text-secondary" id="check-desc-2">All consulted policies ratified within the last 180 days (Current).</span>
+</div>
+</div>
+<!-- Check 3 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[20px] shrink-0 mt-0.5" id="check-icon-3">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Author & Approver Validation</span>
+<span class="font-body-sm text-body-sm text-secondary" id="check-desc-3">Verified by Dr. Sarah Mercer (CMO) and Pharmacy & Therapeutics Committee.</span>
+</div>
+</div>
+<!-- Check 4 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[20px] shrink-0 mt-0.5" id="check-icon-4">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Conflict Spectrum Audit</span>
+<span class="font-body-sm text-body-sm text-secondary" id="check-desc-4">0 cross-document contradictions detected across 1,840 policy tokens.</span>
+</div>
+</div>
+<!-- Check 5 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[#2F7D5B] text-[20px] shrink-0 mt-0.5" id="check-icon-5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Provenance Trail Immutability</span>
+<span class="font-body-sm text-body-sm text-secondary" id="check-desc-5">Token vector citation anchors successfully registered.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Sources Consulted Dossier -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">menu_book</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Active Retrieved Citations</h4>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-secondary" id="citation-count-badge">3 Documents</span>
+</div>
+<!-- Citation List Container -->
+<div class="flex flex-col gap-3" id="citations-container">
+<!-- Citation 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[1]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">SOP-ED-402</span>
+                <span class="text-secondary text-label-sm font-label-sm">ED Potassium Repletion Standing Protocol</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 4 Institutional SOPs</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">
+            "Section 3.2: Registered nurses with emergency credentials may autonomously initiate protocolized potassium chloride infusions for serum levels < 3.2 mEq/L."
+          </p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">Updated Oct 2024</span>
+            <span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1">
+              <span class="material-symbols-outlined text-[12px]">verified</span> Active Standing Order
+            </span>
+          </div>
+        </div>
+        <!-- Citation 2 -->
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[2]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">CARD-GUIDE-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">Inpatient Potassium Repletion Guideline</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 2 Clinical Guidelines</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">
+            "Acute inpatient repletion guidelines require verified baseline 12-lead telemetry confirmation prior to hypertonic electrolyte infusion."
+          </p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">Ratified ACC/NCCN 2024</span>
+            <span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1">
+              <span class="material-symbols-outlined text-[12px]">verified</span> National Benchmark
+            </span>
+          </div>
+        </div>
+        <!-- Citation 3 -->
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[3]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">NFH-REG-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">State Standing Order Delegation Rule</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 1 Regulatory Statutes</span>
+          </div>
+<p class="font-body-sm text-body-sm text-secondary italic">
+                    "Statutory Delegation Rule § 14-8: Hospital standing orders provide legally compliant coverage deferring immediate provider counter-signature up to 4 hours."
+                  </p>
+<div class="flex items-center justify-between text-secondary pt-1">
+<span class="font-label-sm text-label-sm">State Regulatory Code</span>
+<span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> Statutorily Valid
+                    </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Validation & Provenance Footer Note -->
+<div class="w-full text-center py-6">
+<p class="font-label-sm text-label-sm text-secondary">
+          Demo uses synthetic data. Not clinical guidance. All Northfield Health documents, clinical policies, and patient rules shown are non-clinical computational mockups.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Sandbox Controller
+  const scenarioData = {
+    'A': {
+      query: "Can nursing staff initiate IV potassium without attending physician co-signature?",
+      title: "Verified Clinical Synthesis",
+      statusBadge: "98% Grounded",
+      statusClass: "bg-[#E4F2EA] text-[#2F7D5B]",
+      glowColor: "bg-[#2F7D5B]/10",
+      icon: "verified",
+      iconClass: "text-[#2F7D5B]",
+      iconBg: "bg-[#E4F2EA]",
+      subtitle: "Grounded answer • 0 unverified claims",
+      footerNote: "All 3 claims grounded in Northfield Health retrieved documents.",
+      bodyHtml: `
+        <p><strong>Yes.</strong> Registered nursing staff at Northfield Health may initiate intravenous potassium replacement autonomously, provided serum potassium is documented below <strong>3.2 mEq/L</strong> and the dose adheres strictly to the standardized ED nurse-driven protocol <sup class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm ml-0.5">[1]</sup>.</p>
+        <div class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-3 my-1">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-primary">fact_check</span>
+            Autonomous RN Initiation Criteria Checklist
+          </span>
+          <ul class="space-y-2.5">
+            <li class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface"><strong>Baseline ECG Verified:</strong> Continuous telemetry established with no existing wide QRS or heart block <sup class="text-secondary font-label-sm">[2]</sup>.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface"><strong>Rate Limitation:</strong> Peripheral IV infusion not to exceed 10 mEq/hr; central line rate cap is 20 mEq/hr with mandatory infusion pump lock <sup class="text-secondary font-label-sm">[1]</sup>.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[#2F7D5B] text-[18px] shrink-0 mt-0.5">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface"><strong>Co-Signature Requirement:</strong> Attending physician co-signature is <em>deferred for up to 4 hours</em> following administration under Standing Order SOP-ED-402 <sup class="text-secondary font-label-sm">[1, 3]</sup>.</span>
+            </li>
+          </ul>
+        </div>
+        <p class="text-secondary font-body-sm text-body-sm">Clinical warning: If renal impairment is documented (eGFR < 30 mL/min or creatinine > 2.0 mg/dL), standing nurse order is strictly suspended and mandatory nephrology or attending consultation is required prior to infusion initiation.</p>
+      `,
+      checklistCounter: "5 / 5 Passed",
+      checklistCounterClass: "bg-[#E4F2EA] text-[#2F7D5B]",
+      checklistItems: [
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Tier Precedence Enforced", desc: "Tier 2 Clinical Guidelines & Tier 4 Institutional SOPs aligned without contradiction." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Corpus Freshness & Ratification", desc: "All consulted policies ratified within the last 180 days (Current)." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Author & Approver Validation", desc: "Verified by Dr. Sarah Mercer (CMO) and Pharmacy & Therapeutics Committee." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Conflict Spectrum Audit", desc: "0 cross-document contradictions detected across 1,840 policy tokens." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Provenance Trail Immutability", desc: "Token vector citation anchors successfully registered." }
+      ],
+      citationsCount: "3 Documents",
+      citationsHtml: `
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[1]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">SOP-ED-402</span>
+                <span class="text-secondary text-label-sm font-label-sm">ED Potassium Repletion Standing Protocol</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 4 Institutional SOPs</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Section 3.2: Registered nurses with emergency credentials may autonomously initiate protocolized potassium chloride infusions for serum levels < 3.2 mEq/L."</p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">Updated Oct 2024</span>
+            <span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> Active Standing Order</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[2]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">CARD-GUIDE-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">Inpatient Potassium Repletion Guideline</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 2 Clinical Guidelines</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Acute inpatient repletion guidelines require verified baseline 12-lead telemetry confirmation prior to hypertonic electrolyte infusion."</p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">Ratified ACC/NCCN 2024</span>
+            <span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> National Benchmark</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[3]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">NFH-REG-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">State Standing Order Delegation Rule</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 1 Regulatory Statutes</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Statutory Delegation Rule § 14-8: Hospital standing orders provide legally compliant coverage deferring immediate provider counter-signature up to 4 hours."</p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">State Regulatory Code</span>
+            <span class="font-label-sm text-label-sm text-[#2F7D5B] flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> Statutorily Valid</span>
+          </div>
+        </div>
+      `
+    },
+    'B': {
+      query: "How long can a patient wait for prior authorization approval before urgent escalation?",
+      title: "Cross-Policy Precedence Conflict",
+      statusBadge: "Tier 3 Overrules Tier 4",
+      statusClass: "bg-[#FBE6E4] text-[#B4403A]",
+      glowColor: "bg-[#B4403A]/10",
+      icon: "compare_arrows",
+      iconClass: "text-[#B4403A]",
+      iconBg: "bg-[#FBE6E4]",
+      subtitle: "Explicit policy divergence detected • Hierarchical resolution applied",
+      footerNote: "Conflict resolved: Payer Rule (Tier 3) supersedes internal hospital SOP (Tier 4).",
+      bodyHtml: `
+        <div class="p-4 rounded-xl bg-[#FBE6E4]/40 flex items-start gap-3">
+          <span class="material-symbols-outlined text-[#B4403A] text-[22px] shrink-0">warning</span>
+          <div class="flex flex-col gap-1">
+            <strong class="text-on-surface font-label-md">Direct Conflict Detected Across 2 Documents</strong>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Northfield Health's internal standard (<strong>SOP-REV-108: Prior Authorization Workflow</strong>) specifies an escalation threshold of <strong>5 business days</strong>. However, external payer directive (<strong>PAYER-RHP-2024: Prior Authorization Escalation Standard</strong>) mandates expedited escalation within <strong>72 hours (3 calendar days)</strong> for acute inpatient admissions.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          <strong>Operational Verdict:</strong> Because external regulatory and contractual payer obligations reside at <strong>Tier 3 Precedence</strong>, they legally supersede institutional internal guidelines (<strong>Tier 4 Precedence</strong>). Nursing and administrative staff must initiate expedited peer-to-peer escalation at <strong>72 hours</strong>.
+        </p>
+
+        <div class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-3">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-primary">rule</span>
+            Precedence Resolution Matrix
+          </span>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+              <span class="font-body-sm text-body-sm">Tier 3 (PAYER-RHP-2024: Prior Authorization Escalation Standard): 72-Hour Mandate</span>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#E4F2EA] text-[#2F7D5B] font-bold">ENFORCED PRECEDENCE</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest opacity-60">
+              <span class="font-body-sm text-body-sm line-through">Tier 4 (SOP-REV-108: Prior Authorization Workflow): 5-Business Day Standard</span>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#FBE6E4] text-[#B4403A] font-bold">SUPERSEDED / INACTIVE</span>
+            </div>
+          </div>
+        </div>
+      `,
+      checklistCounter: "Conflict Flagged",
+      checklistCounterClass: "bg-[#FBE6E4] text-[#B4403A]",
+      checklistItems: [
+        { icon: "error", color: "text-[#B4403A]", title: "Cross-Policy Conflict Identified", desc: "Turnaround interval contradiction detected between PAYER-RHP-2024 and SOP-REV-108." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Precedence Tier Resolution Applied", desc: "Tier 3 Payer standard granted absolute authority over Tier 4 Internal standard." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Corpus Freshness Flagged", desc: "SOP-REV-108: Prior Authorization Workflow flagged as review overdue 260 days." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Audit Trail Created", desc: "Discrepancy registered in Northfield Health Compliance and Legal incident log." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Grounding check passed", desc: "Answer constructed strictly from verbatim clauses in Regional Health Plans Council agreement." }
+      ],
+      citationsCount: "2 Documents",
+      citationsHtml: `
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[1]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">PAYER-RHP-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">Prior Authorization Escalation Standard</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#E4F2EA] text-[#2F7D5B]">Tier 3 Payer Rules</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Section 7.1: Failure to resolve prior authorization within 72 continuous hours mandates immediate expedited clinical peer review with hospital medical director."</p>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2 opacity-75">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-surface text-secondary flex items-center justify-center font-label-sm text-label-sm">[2]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">SOP-REV-108</span>
+                <span class="text-secondary text-label-sm font-label-sm">Prior Authorization Workflow</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#FBE6E4] text-[#B4403A]">Tier 4 Institutional SOPs (Review Overdue)</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Internal patient accounting workflows allow 5 standard operating business days for authorization response before senior nurse escalation."</p>
+        </div>
+      `
+    },
+    'C': {
+      query: "What is our policy on telehealth prescribing for Schedule II-IV controlled substances?",
+      title: "Safe Silence Enforced",
+      statusBadge: "Grounding Failed • 0% Extrapolation",
+      statusClass: "bg-[#FBF0DA] text-[#B7791F]",
+      glowColor: "bg-[#B7791F]/10",
+      icon: "gpp_maybe",
+      iconClass: "text-[#B7791F]",
+      iconBg: "bg-[#FBF0DA]",
+      subtitle: "Absence of ratified internal SOP • System refuses speculative answer",
+      footerNote: "Safe Silence: Grounding guard active.",
+      bodyHtml: `
+        <div class="p-4 rounded-xl bg-[#FBF0DA]/50 flex items-start gap-3">
+          <span class="material-symbols-outlined text-[#B7791F] text-[22px] shrink-0">shield_with_heart</span>
+          <div class="flex flex-col gap-1">
+            <strong class="text-on-surface font-label-md">Knowledge Gap Detected: Ratified Institutional SOP Missing</strong>
+            <p class="font-body-sm text-body-sm text-secondary">
+              While state regulatory statutes (<strong>NFH-REG-2024: State Standing Order Delegation Rule</strong>) define delegation boundaries, Northfield Health has <strong>not yet ratified a hospital-wide clinical policy</strong> governing local provider workflow.
+            </p>
+          </div>
+        </div>
+
+        <p class="font-headline-sm text-headline-sm text-on-surface pt-2">
+          "I do not have sufficient ratified hospital guidance to answer this question."
+        </p>
+
+        <p class="font-body-md text-body-md text-secondary">
+          To ensure strict clinical safety, TrustLens is programmed to deliberately abstain rather than infer probabilistic clinical rules. Ungrounded guidance in this domain risks non-compliant controlled substance distribution.
+        </p>
+
+        <div class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-3">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-primary">pending_actions</span>
+            Autonomous Governance Action Logged
+          </span>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between text-body-sm text-on-surface">
+              <span>Gap logged to Hospital Knowledge Gap Backlog:</span>
+              <code class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container">#GAP-ED-TELEHEALTH-991</code>
+            </div>
+            <div class="flex items-center justify-between text-body-sm text-on-surface">
+              <span>Notification dispatched to:</span>
+              <span class="font-label-sm text-label-sm font-semibold">Chief Medical Officer & Pharmacy Director</span>
+            </div>
+          </div>
+        </div>
+      `,
+      checklistCounter: "Abstention Guard",
+      checklistCounterClass: "bg-[#FBF0DA] text-[#B7791F]",
+      checklistItems: [
+        { icon: "warning", color: "text-[#B7791F]", title: "Missing Tier 4 Policy Identified", desc: "No ratified Northfield Health institutional standard found for telehealth controlled substances." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Silence Guard Triggered", desc: "Confidence below the grounding threshold; silence guard active." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Zero Speculative Text Generated", desc: "System withheld LLM speculative extrapolation entirely." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Knowledge Gap Registered", desc: "Automatic ticket dispatched to Northfield Health Clinical Review Board." },
+        { icon: "check_circle", color: "text-[#2F7D5B]", title: "Patient Safety Safeguard", desc: "Prevents unlicensed or statutorily non-compliant electronic prescriptions." }
+      ],
+      citationsCount: "1 Statute Only",
+      citationsHtml: `
+        <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">[1]</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md font-semibold text-on-surface">NFH-REG-2024</span>
+                <span class="text-secondary text-label-sm font-label-sm">State Standing Order Delegation Rule</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Tier 1 Regulatory Statutes</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary italic">"Standing orders and provider delegation require explicit institutional ratification before clinical execution in hospital ambulatory services."</p>
+          <div class="flex items-center justify-between text-secondary pt-1">
+            <span class="font-label-sm text-label-sm">Incomplete Hospital Ratification</span>
+            <span class="font-label-sm text-label-sm text-[#B7791F] flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">gpp_maybe</span> Action Required</span>
+          </div>
+        </div>
+      `
+    }
+  };
+
+  function setQuery(text) {
+    const input = document.getElementById('clinical-query-input');
+    if (input) {
+      input.value = text;
+    }
+  }
+
+  function switchScenario(key) {
+    const data = scenarioData[key];
+    if (!data) return;
+
+    // Update Input
+    setQuery(data.query);
+
+    // Update Scenario Cards UI
+    ['A', 'B', 'C'].forEach(id => {
+      const card = document.getElementById(`card-scenario-${id.toLowerCase()}`);
+      const btn = document.getElementById(`btn-scenario-${id.toLowerCase()}`);
+      const pill = document.getElementById(`scenario-${id.toLowerCase()}-pill-active`);
+      
+      if (id === key) {
+        if (card) {
+          card.classList.add('shadow-md');
+          card.classList.remove('shadow-sm');
+        }
+        if (pill) pill.classList.remove('hidden');
+        if (btn) {
+          btn.className = "w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-5 py-3 rounded-full transition-all";
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">verified</span><span>Run this scenario (Active)</span>`;
+        }
+      } else {
+        if (card) {
+          card.classList.remove('shadow-md');
+          card.classList.add('shadow-sm');
+        }
+        if (pill) pill.classList.add('hidden');
+        if (btn) {
+          btn.className = "w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-on-surface font-label-md text-label-md px-5 py-3 rounded-full hover:bg-surface-container transition-all";
+          btn.innerHTML = `<span>Run this scenario</span><span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>`;
+        }
+      }
+    });
+
+    // Update Answer Card
+    document.getElementById('answer-status-title').innerText = data.title;
+    document.getElementById('confidence-score-badge').innerText = data.statusBadge;
+    document.getElementById('confidence-score-badge').className = `font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold ${data.statusClass}`;
+    document.getElementById('confidence-indicator-bg').className = `h-10 w-10 rounded-full flex items-center justify-center shrink-0 ${data.iconBg}`;
+    document.getElementById('confidence-indicator-icon').className = `material-symbols-outlined text-[22px] ${data.iconClass}`;
+    document.getElementById('confidence-indicator-icon').innerText = data.icon;
+    document.getElementById('answer-subtitle').innerText = data.subtitle;
+    document.getElementById('synthesis-body-content').innerHTML = data.bodyHtml;
+    document.getElementById('footer-grounded-text').innerText = data.footerNote;
+
+    // Update Checklist Panel
+    document.getElementById('checklist-counter').innerText = data.checklistCounter;
+    document.getElementById('checklist-counter').className = `font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold ${data.checklistCounterClass}`;
+    
+    data.checklistItems.forEach((item, index) => {
+      const idx = index + 1;
+      const iconEl = document.getElementById(`check-icon-${idx}`);
+      const descEl = document.getElementById(`check-desc-${idx}`);
+      if (iconEl) {
+        iconEl.innerText = item.icon;
+        iconEl.className = `material-symbols-outlined ${item.color} text-[20px] shrink-0 mt-0.5`;
+      }
+      if (descEl) {
+        descEl.innerText = item.desc;
+      }
+    });
+
+    // Update Citations
+    document.getElementById('citation-count-badge').innerText = data.citationsCount;
+    document.getElementById('citations-container').innerHTML = data.citationsHtml;
+  }
+
+  // Synthesis Execution Simulation
+  document.getElementById('run-synthesis-btn')?.addEventListener('click', () => {
+    const btn = document.getElementById('run-synthesis-btn');
+    const inputVal = document.getElementById('clinical-query-input')?.value.toLowerCase() || '';
+    
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Verifying Corpus...</span>`;
+    
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">psychology</span><span>Synthesize Query</span>`;
+      if (inputVal.includes('prior') || inputVal.includes('auth') || inputVal.includes('escalat')) {
+        switchScenario('B');
+      } else if (inputVal.includes('telehealth') || inputVal.includes('controlled') || inputVal.includes('schedule')) {
+        switchScenario('C');
+      } else {
+        switchScenario('A');
+      }
+    }, 450);
+  });
+
+  // Action Bar Buttons micro-interactions
+  document.getElementById('reset-sandbox-btn')?.addEventListener('click', () => {
+    switchScenario('A');
+  });
+
+  document.getElementById('upload-doc-btn')?.addEventListener('click', () => {
+    alert("Interactive Sandbox: File upload simulation active for synthetic Northfield Health environment.");
+  });
+
+  function copySynthesis() {
+    const text = document.getElementById('synthesis-body-content')?.innerText || '';
+    navigator.clipboard?.writeText(text);
+    alert("Clinical synthesis text copied to clipboard.");
+  }
+
+  function printSynthesis() {
+    window.print();
+  }
+</script></main><footer class="w-full bg-surface-container-low py-12 mt-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row sm:items-center gap-2"><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">TrustLens</span><span class="hidden sm:inline text-secondary">•</span><span class="font-body-sm text-body-sm text-secondary">Engineered by team Cache Me Outside for Northfield Health</span></div><div class="flex items-center gap-6"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="clinical-validation" href="#">Clinical Validation</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="security-and-provenance" href="#">Security & Provenance</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ethics-dossier" href="#">Ethics Dossier</a></div><div class="text-right"><p class="font-label-sm text-label-sm text-secondary">© 2025 Cache Me Outside. All rights reserved.</p><p class="font-label-sm text-label-sm text-secondary">Demo uses synthetic data. Not clinical guidance.</p></div></div></footer></body></html>
